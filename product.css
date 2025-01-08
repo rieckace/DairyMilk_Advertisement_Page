@@ -1,0 +1,140 @@
+.products {
+    padding: 120px 5% 60px;
+    background: linear-gradient(to bottom, #e3dde6, #eae5eb);
+}
+.main h2{
+   font-style: oblique; 
+    font-weight: bold;
+
+}
+
+header h1{
+    justify-content: center;
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: baseline;
+}
+
+.products h2 {
+    color: var(--cadbury-purple);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 2px rgba(226, 16, 16, 0.1);
+    background: radial-gradient(rgb(59, 8, 110),rgb(102, 45, 151));
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background: linear-gradient(rgb(78, 11, 104),purple);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: inline-flexbox;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-item h3 {
+    color: var(--cadbury-purple);
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.product-item p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.price {
+    color: var(--cadbury-gold);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.buy-button {
+    background-color: var(--cadbury-purple);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.buy-button:hover {
+    background-color: var(--cadbury-gold);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .products {
+        padding: 100px 20px 40px;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .product-item img {
+        height: 200px;
+        /* white-space-collapse: collapse; */
+        width: 10px;
+    }
+}
+
+.video-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.video-slider video {
+    flex: 0 0 auto;
+    height: 100vh;
+    width: 100%;
+    min-width: 100%; 
+    margin-right: 10px; 
+}
+
+.video-slider::-webkit-scrollbar {
+    display: none; 
+}
+
+.video-slider {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}

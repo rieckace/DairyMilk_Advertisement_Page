@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadbury Dairy Milk - Contact Us</title>
+    <link rel="stylesheet" href="dairymilk.css">
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.ctfassets.net/pmzhtobns06n/2lwDnQV5TUAx15z7Z2FYWw/63e169e6c0155db88194f2a506b260e8/Cadbury_GlobalNavigation_BrandLogo_Desktop.svg?q=80" alt="Cadbury Logo">
+        </div>
+        <h1>Dairy Milk</h1>
+        <nav>
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="productPage.html">Products</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <!-- <h2 style="font-size: 40px; ">Contact Us</h2> -->
+            <center><font size="8" color="white"><b>Contact Us</b></font></center><br>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cadbury. All rights reserved.</p>
+    </footer>
+</body>
+</html>

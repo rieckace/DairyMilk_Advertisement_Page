@@ -1,0 +1,121 @@
+.about {
+    padding: 120px 5% 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1{
+    justify-content: center;
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: baseline;
+}
+
+.about h2 {
+    color: var(--cadbury-purple);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text {
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text h3 {
+    color: var(--cadbury-purple);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-image {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+.timeline {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 15px;
+}
+
+.timeline h3 {
+    color: var(--cadbury-purple);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.year {
+    color: var(--cadbury-gold);
+    font-weight: bold;
+    min-width: 100px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .year {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.brand-name {
+    color: var(--text-light);
+    margin: 0 2rem;
+}
+
+.brand-name h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .brand-name {
+        display: none;
+    }
+}
